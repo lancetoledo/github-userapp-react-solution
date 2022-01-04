@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+    font-family: 'Space Mono', monospace;
+}
+
+.container {
+    width: 500px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.darkMode {
+    display: flex;
+    font-size: x-small;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+}
+
+.search {
+    margin-top: 10px;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.search input {
+    margin-left: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.search img {
+    width: 15px;
+    height: 15px;
+    margin-left: 15px;
+}
+
+.search_btn {
+    display: flex;
+    align-items: center;
+    background-color: #0079FF;
+    border-radius: 5px;
+    margin-right: 5px;
+    height: 25px;
+}
+
+.search_btn button {
+    background: none;
+    border: none;
+    outline: none;
+    color: #fefefe;
+
+}
+
+#error {
+    color: rgb(175, 0, 0);
+    height: 15px;
+    display: none;
+}
+
+
+.content {
+    margin-top: 10px;
+    width: 100%;
+    height: 72%;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+}
+
+
+.profile  {
+    width: calc(100%/4);
+    height: 100%;
+    /* background: chartreuse; */
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile_frame img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.user {
+    width: 70%;
+    height: 100%;
+    margin-top: 20px;
+    /* background-color: cornflowerblue; */
+}
+
+.user_info {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    
+
+}
+
+.date {
+    font-size: x-small;
+    margin-top: 10px;
+}
+
+.username {
+    margin-top: 2px;
+    font-size: x-small;
+}
+
+.bio {
+    margin-top: 10px;
+    font-size: x-small;
+}
+
+.stats_container {
+    width: 100%;
+    height: 20%;
+    background-color: #F6F8FF;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.stats {
+    font-size: x-small;
+
+}
+
+.stats p:nth-child(2) {
+    font-weight: bold;
+}
+
+.links_container {
+    width: 100%;
+    height: 30%;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+}
+
+.info {
+    display: flex;
+    font-size: xx-small;
+    align-items: center;
+    height: 100%;
+    width: 200px;
+
+}
+
+.info img {
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+    .container {
+        width: 90%;
+        /* height: 80%; */
+    }
+
+    .profile {
+        background-color: #0079FF;
+        height: 80px;
+    }
+
+    .user_info {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .name {
+        width: 100%;
+    }
+
+    .date {
+        width: 100%;
+    }
+}
+
+
+/* Dark Mode CSS */
+
+.App.dark {
+    background-color: rgb(20,29,47);
+    color: white;
+}
+
+.App.dark .content {
+    background-color: #1E2A47;
+}
+
+.App.dark #statistics {
+    background-color: rgb(20,29,47);
+}
+
+.App.dark #search_container {
+    background-color: #1E2A47;
+}
+
+
+
+
+
+/* function darkModeProperties(){
+  background.backgroundColor = 'rgb(20,29,47)'
+  background.color = "white"
+  content.backgroundColor = '#1E2A47'
+  stats.backgroundColor = 'rgb(20,29,47)'
+  search.backgroundColor = '#1E2A47'
+  modeText.innerText = "LIGHT"
+  mode.src = "./assets/icon-sun.svg"
+  darkMode = true
+}
+
+function lightModeProperties(){
+  background.backgroundColor = '#F2F2F2'
+  background.color = "black"
+  content.backgroundColor = 'white'
+  stats.backgroundColor = '#F6F8FF'
+  search.backgroundColor = 'white'
+  modeText.innerText = "DARK"
+  dark_btn.src = "./assets/icon-moon.svg"
+  darkMode = false
+} */
+
+
+
+
+
